@@ -1,0 +1,13 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: tanzu-java-web-app
+  description: Andrew and Robert
+  annotations:
+    'backstage.io/kubernetes-label-selector': 'app.kubernetes.io/part-of=tanzu-java-web-app' #Identifies the Kubernetes objects that make up this component
+    'backstage.io/techdocs-ref': dir:. #TechDocs label
+spec:
+  type: service
+  lifecycle: experimental
+  owner: team-a
+  system: tanzu-gtt
